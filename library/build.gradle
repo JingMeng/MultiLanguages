@@ -1,17 +1,21 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
 
 android {
-    compileSdkVersion 28
+    namespace 'com.github.jokar.multilanguages.library'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    compileSdk 34
 
 
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 28
+        minSdk 15
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
     }
 
@@ -20,6 +24,7 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    
     }
 
 }
@@ -29,11 +34,6 @@ dependencies {
 }
 
 
-publish {
-    userOrg = 'a10188755550'
-    groupId = 'com.github.jokar'
-    artifactId = 'multi-languages'
-    publishVersion = "$version"
-    desc = 'android multi language support (support android O+)'
-    website = 'https://github.com/MichaelJokAr/MultiLanguages'
-}
+
+
+

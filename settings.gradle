@@ -1,1 +1,4 @@
-include ':app', ':plugin', ':library'
+include ':library'
+if (providers.gradleProperty('includeLegacyLanguagePlugin').orNull == 'true') {
+    include ':app', ':plugin'
+}

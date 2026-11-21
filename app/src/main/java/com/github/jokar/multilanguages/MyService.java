@@ -1,9 +1,9 @@
-package com.github.jokar.multilanguages;
+﻿package com.github.jokar.multilanguages;
 
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.widget.Toast;
 
 public class MyService extends Service {
@@ -20,3 +20,4 @@ public class MyService extends Service {
         Toast.makeText(getApplicationContext(), getString(R.string.service_create), Toast.LENGTH_SHORT).show();
     }
 }
+

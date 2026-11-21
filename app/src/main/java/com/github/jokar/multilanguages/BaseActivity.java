@@ -1,7 +1,7 @@
-package com.github.jokar.multilanguages;
+﻿package com.github.jokar.multilanguages;
 
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.jokar.multilanguages.library.MultiLanguage;
 
@@ -12,3 +12,4 @@ public class BaseActivity extends AppCompatActivity {
         super.attachBaseContext(newBase);
     }
 }
+

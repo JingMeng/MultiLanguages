@@ -1,9 +1,9 @@
-package com.github.jokar.multilanguages;
+﻿package com.github.jokar.multilanguages;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.widget.TextView;
 
 public class SecondActivity extends BaseActivity {
@@ -21,3 +21,4 @@ public class SecondActivity extends BaseActivity {
         tvView.setText(getString(R.string.tv3_value));
     }
 }
+

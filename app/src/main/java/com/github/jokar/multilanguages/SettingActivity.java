@@ -1,10 +1,10 @@
-package com.github.jokar.multilanguages;
+﻿package com.github.jokar.multilanguages;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.View;
 import android.widget.TextView;
 
@@ -36,21 +36,20 @@ public class SettingActivity extends BaseActivity {
     }
 
     private void setClick() {
-        //跟随系统
+        //璺熼殢绯荤粺
         findViewById(R.id.btn_auto).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 selectLanguage(0);
             }
         });
-        //简体中文
-        findViewById(R.id.btn_cn).setOnClickListener(new View.OnClickListener() {
+        //绠€浣撲腑鏂?        findViewById(R.id.btn_cn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 selectLanguage(1);
             }
         });
-        //繁体中文
+        //绻佷綋涓枃
         findViewById(R.id.btn_traditional).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,3 +65,4 @@ public class SettingActivity extends BaseActivity {
         });
     }
 }
+
